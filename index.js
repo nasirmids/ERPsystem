@@ -1,16 +1,29 @@
-var http = require('http');
-
-var server = http.createServer(function(request, response) {
-
-    response.writeHead(200, {"Content-Type": "text/plain"});
-
-    response.end("change in feature 1");
-
-    response.end("Hello World! this is the change - change by master");
-   response.end("change in master");
-});
-
-var port = process.env.PORT || 1337;
-server.listen(port);
-
-console.log("Server running at http://localhost:%d", port);
+< !DOCTYPE html >
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>Skills for Care</title>
+            <base href="/" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        </head>
+        <body>
+            <app-root></app-root>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132324399-3"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+    function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+            
+                gtag('config', 'UA-132324399-3');
+  </script>
+            <script>
+                document.body.classList.add('js-enabled');
+  </script>
+        </body>
+    </html>
+    </html>
